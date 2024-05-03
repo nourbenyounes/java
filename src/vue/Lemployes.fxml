@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #D9E4EC;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.LemployesController">
+   <top>
+      <Pane prefHeight="98.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text focusTraversable="true" layoutX="24.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Arial; -fx-fill: linear-gradient(to right, #3498db, #2ecc71); -fx-font-size: 21px;" text="Liste des employes : " wrappingWidth="214.77010345458984" />
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="452.0" prefWidth="26.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="309.0" prefWidth="19.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="72.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="AE" layoutX="284.0" layoutY="24.0" mnemonicParsing="false" onAction="#Ajoutemp" prefHeight="25.0" prefWidth="132.0" text="Ajouter un employe" />
+         </children></Pane>
+   </bottom>
+   <center>
+      <TableView fx:id="tableViewEmployes" onMouseClicked="#afficher" prefHeight="334.0" prefWidth="654.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="100" text="ID" />
+                <TableColumn fx:id="colNom" prefWidth="150" text="Nom" />
+                <TableColumn fx:id="colPrenom" prefWidth="150" text="Prenom" />
+                <TableColumn fx:id="colEmail" prefWidth="150" text="Email" />
+                <TableColumn fx:id="colgrade" prefWidth="100" text="ID Projets" />
+                <TableColumn fx:id="colIdeq" prefWidth="200" text="Commentaire" />
+            </columns>
+
+      </TableView>
+   </center>
+</BorderPane>

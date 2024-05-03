@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.Ajoute_employeController">
+   <top>
+      <Pane prefHeight="45.0" prefWidth="700.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <Pane prefHeight="300.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text focusTraversable="true" layoutX="34.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Arial; -fx-fill: linear-gradient(to right, #3498db, #2ecc71); -fx-font-size: 21px;" text="Ajouter l'employé :" wrappingWidth="358.7701644897461" />
+            <Text layoutX="178.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(to right, #3498db, #2ecc71);" text="ID :" />
+            <Text layoutX="178.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(to right, #3498db, #2ecc71);" text="Nom :" />
+            <Text layoutX="176.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(to right, #3498db, #2ecc71);" text="Prenom :" />
+            <Text layoutX="177.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(to right, #3498db, #2ecc71);" text="Email :" />
+            <Text layoutX="176.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(to right, #3498db, #2ecc71);" text="Grade :" />
+            <Text layoutX="177.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(to right, #3498db, #2ecc71);" text="ID equipe :" />
+            <ChoiceBox fx:id="eq_emp" layoutX="289.0" layoutY="333.0" prefHeight="25.0" prefWidth="208.0" />
+            <Text layoutX="175.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(to right, #3498db, #2ecc71);" text="Date de naissance :" />
+            <Text layoutX="176.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(to right, #3498db, #2ecc71);" text="Sexe :" />
+            <Text layoutX="176.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: linear-gradient(to right, #3498db, #2ecc71);" text="Adresse :" />
+            <CheckBox layoutX="380.0" layoutY="204.0" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(to right, #3498db, #2ecc71);" text="F" />
+            <CheckBox layoutX="292.0" layoutY="204.0" mnemonicParsing="false" style="-fx-text-fill: linear-gradient(to right, #3498db, #2ecc71);" text="M" />
+            <TextField id="user" fx:id="id_emp" layoutX="292.0" layoutY="66.0" prefHeight="26.0" prefWidth="206.0" promptText="User name " style="-fx-background-color: transparent; -fx-border-color: #0538ff; -fx-border-image-width: 0px ;0px; 2px ; 0px;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.75" />
+               </effect>
+            </TextField>
+            <TextField id="user" fx:id="nom_emp" layoutX="291.0" layoutY="99.0" prefHeight="26.0" prefWidth="206.0" promptText="User name " style="-fx-background-color: transparent; -fx-border-color: #0538ff; -fx-border-image-width: 0px ;0px; 2px ; 0px;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.75" />
+               </effect>
+            </TextField>
+            <DatePicker fx:id="naiss_emp" layoutX="290.0" layoutY="167.0" prefHeight="25.0" prefWidth="209.0" />
+            <TextField id="user" fx:id="prenom_emp" layoutX="291.0" layoutY="131.0" prefHeight="26.0" prefWidth="206.0" promptText="User name " style="-fx-background-color: transparent; -fx-border-color: #0538ff; -fx-border-image-width: 0px ;0px; 2px ; 0px;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.75" />
+               </effect>
+            </TextField>
+            <TextField id="user" layoutX="291.0" layoutY="231.0" prefHeight="26.0" prefWidth="206.0" promptText="User name " style="-fx-background-color: transparent; -fx-border-color: #0538ff; -fx-border-image-width: 0px ;0px; 2px ; 0px;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.75" />
+               </effect>
+            </TextField>
+            <TextField id="user" fx:id="mail_emp" layoutX="291.0" layoutY="265.0" prefHeight="26.0" prefWidth="206.0" promptText="User name " style="-fx-background-color: transparent; -fx-border-color: #0538ff; -fx-border-image-width: 0px ;0px; 2px ; 0px;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.75" />
+               </effect>
+            </TextField>
+            <Button fx:id="V" layoutX="446.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Valider">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.18039216101169586" green="0.800000011920929" blue="0.4431372582912445" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.20392157137393951" green="0.5960784554481506" blue="0.8588235378265381" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.18039216101169586" green="0.800000011920929" blue="0.4431372582912445" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <TextField id="user" fx:id="grade_emp" layoutX="292.0" layoutY="300.0" prefHeight="26.0" prefWidth="206.0" promptText="User name " style="-fx-background-color: transparent; -fx-border-color: #0538ff; -fx-border-image-width: 0px ;0px; 2px ; 0px;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.75" />
+               </effect>
+            </TextField>
+         </children>
+      </Pane>
+   </center>
+   <right>
+      <Pane prefHeight="300.0" prefWidth="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollBar layoutX="6.0" orientation="VERTICAL" prefHeight="447.0" prefWidth="14.0" />
+         </children>
+      </Pane>
+   </right>
+   <bottom>
+      <Pane prefHeight="0.0" prefWidth="700.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
